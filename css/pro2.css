@@ -1,0 +1,465 @@
+/* CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* Navigation setting */
+.navigation {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  /* width: 100%; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.navigation::before {
+  content: "";
+  background-color: rgb(46, 42, 42);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+.navitems {
+  margin: 4px 12px;
+}
+.navitems img {
+  display: flex;
+  width: 90px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 4px 12px;
+}
+.navitems h3 {
+  color: rgb(255, 250, 250);
+  font-size: 0.8 rem;
+  margin-top: 4px;
+  margin-left: 13px;
+}
+#nd {
+  margin-left: -5px;
+}
+.navigation ul {
+  display: flex;
+  list-style: none;
+}
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+  font-size: 1.25rem;
+  margin: 2px;
+}
+
+.navigation ul li :hover {
+  background-color: rgba(65, 65, 58, 0.336);
+  color: rgb(10, 10, 10);
+  border-radius: 21px;
+  text-decoration: oldlace;
+  margin-left: 18px;
+  padding: 12px;
+}
+
+/* section background image */
+#bgimage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 200px;
+  height: 287px;
+}
+#bgimage::before {
+  content: "";
+  background-image: url("../media/cofieebg\ \(1\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+  filter: alpha(opacity=30);
+}
+
+/* background h1 .paragraph setting  */
+#bgimage h1,
+p {
+  margin-bottom: 12px;
+  font-size: 3.5rem;
+}
+#bgimage #bgtitle {
+  color: olivedrab;
+  text-shadow: 3px 3px 9px #d41414;
+}
+/* #bgimage :nth-child(2) {
+  font-size: 34px;
+  color: black;
+  font-weight: 800;
+} */
+#bgimage :nth-child(3) {
+  font-size: 22px;
+  color: black;
+  font-weight: 800;
+}
+#bgimage :nth-child(4) {
+  font-size: 22px;
+  color: black;
+  font-weight: 800;
+}
+/* backgroundimage socaial media  */
+.socialmedia {
+  display: block;
+  width: 4%;
+  height: 290px;
+  padding: 4px;
+  margin-bottom: 7px;
+  position: absolute;
+  top: 145px;
+  right: 12px;
+  scroll-behavior: smooth;
+}
+.socialicon a img {
+  scroll-behavior: smooth;
+  width: 35px;
+  height: 36px;
+  border-radius: 18px;
+  margin-bottom: 8px;
+}
+
+.socialmedia :hover {
+  scroll-behavior: smooth;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 22px;
+  border-radius: 25px;
+  box-shadow: rgb(208 150 45 / 86%) 5px 5px 5px 3px;
+}
+
+/* ourservices cardbox */
+#ourservices {
+  position: relative;
+  top: 207px;
+  color: black;
+}
+.cardbox {
+  display: flex;
+  color: black;
+  margin-left: 34px;
+  margin-right: 34px;
+}
+.box1,
+.box2,
+.box3 {
+  border: 1px solid rgb(223, 24, 24);
+  border-radius: 22px;
+  margin: 8px 12px;
+}
+.box1 img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 37%;
+}
+.box2 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  position: relative;
+  left: 37%;
+}
+.box3 img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 35%;
+}
+.box1:hover {
+  background-color: rgba(70, 65, 65, 0.808);
+  color: white;
+  margin-left: 22px;
+  cursor: pointer;
+}
+.box2:hover {
+  background-color: rgba(70, 65, 65, 0.808);
+  color: white;
+  margin-left: 22px;
+  cursor: pointer;
+}
+.box3:hover {
+  background-color: rgba(70, 65, 65, 0.808);
+  color: white;
+  margin-left: 22px;
+  cursor: pointer;
+}
+
+/* aboutsection */
+.aboutsection {
+  display: flex;
+  position: relative;
+  top: 220px;
+  height: 580px;
+  /* border: 1px solid springgreen; */
+}
+.aboutsection h1 {
+  color: black;
+}
+.h1pi {
+  display: block;
+  color: black;
+  position: relative;
+  top: 212px;
+  left: 549px;
+  font-family: "Bree Serif", serif;
+  width: 100%;
+  height: 22px;
+  font-size: 44px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.about-left {
+  border: 1px solid red;
+  width: 50%;
+
+  /* height: 100%; */
+  background-image: url("../media/aboutbg\ \(2\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 12px;
+  border-radius: 15px;
+}
+.about-left:hover {
+  background-color: yellow;
+  cursor: pointer;
+  transform: translate(100px);
+  transition: all 1.6s ease-in-out;
+}
+
+.about-right {
+  border: 1px solid rgb(55, 0, 255);
+  width: 50%;
+  color: white;
+  background-color: rgba(43, 43, 40, 0.664);
+  margin: 12px;
+  border-radius: 15px;
+  height: 400px;
+}
+.about-right:hover {
+  background-color: rgba(119, 81, 119, 0.671);
+  transform: translate(-100px);
+  transition: all 1.6s ease-in-out;
+}
+/* Testimonial section */
+.h1p2 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  position: relative;
+  top: 234px;
+  font-family: "Bree Serif", serif;
+  text-shadow: 13px 8px 1px #e49b0be6;
+  width: 100%;
+  font-size: 32px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+#Testimonial {
+  display: flex;
+  position: relative;
+  top: 230px;
+  margin-left: 34px;
+  margin-right: 34px;
+}
+.clientreviews {
+  border: 1px solid blue;
+  margin: 8px;
+  text-align: center;
+  background-color: #9ace419c;
+  border-radius: 18px;
+  box-shadow: rgb(208 150 45 / 86%) 7px 5px 5px 3px;
+}
+.clientreviews:hover {
+  margin-left: 24px;
+  padding-left: 12px;
+  background-color: #1e1f1c9c;
+  color: rgba(250, 250, 250, 0.938);
+  border-radius: 18px;
+}
+.clientreviews img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.clientreviews img:hover {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin: 7px;
+}
+.client_name {
+  font-size: 2rem;
+  color: rgb(17 67 249);
+  margin: 4px;
+  font-weight: 700;
+}
+
+.client_location {
+  font-size: 1.3rem;
+  color: rgb(218 142 29);
+  margin: 4px;
+  font-weight: 600;
+}
+.client_message {
+  font-size: 1.5rem;
+  color: rgb(4, 10, 15);
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+.reservation {
+  display: flex;
+  position: relative;
+  top: 0px;
+  border: 1px solid red;
+  background-color: rgb(109 98 44 / 54%);
+  width: 70%;
+  margin: 5% 18%;
+  border-radius: 18px;
+}
+#reservation {
+  display: flex;
+  position: relative;
+  top: 222px;
+}
+#reservation::before {
+  content: "";
+  background-image: url("../media/cofieebg\ \(4\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+  filter: alpha(opacity=30);
+}
+.formcontainer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.formitem label {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  font-family: "Slabo 27px", serif;
+}
+.formitem input {
+  display: inline-block;
+  width: 39%;
+  height: 22%;
+  border-radius: 18px;
+  margin: 5px 9px;
+  padding: 10px;
+  color: #0c0c0c;
+  font-weight: 800;
+  font-size: 1rem;
+  background-color: #bfbf429e;
+}
+#formitem2 {
+  display: block;
+  position: relative;
+  top: -58px;
+  left: 368px;
+}
+#formitem3 {
+  margin-top: -43px;
+}
+#formitem4 {
+  display: block;
+  position: relative;
+  top: -58px;
+  left: 415px;
+}
+#formitem5 {
+  margin-top: -43px;
+}
+#formitem7 {
+  display: block;
+  position: relative;
+  top: -58px;
+  left: 415px;
+}
+#formitem8 {
+  font-weight: 800;
+  font-size: 1rem;
+  color: white;
+  font-family: "Slabo 27px", serif;
+  margin-top: -33px;
+}
+.footer {
+  display: flex;
+  position: relative;
+  top: 222px;
+  background-color: rgb(24, 23, 23);
+  color: white;
+  font-size: 22px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+/*  */
+/* utlility classess */
+.h1_primrary {
+  color: white;
+  font-weight: bold;
+  font-family: "Bree Serif", serif;
+  font-size: 2.8rem;
+  padding: 8px;
+}
+
+.paragraph {
+  font-family: "Crimson Text", serif;
+  font-size: 1.4rem;
+  padding: 8px;
+  color: rgb(7, 7, 7);
+  display: flex;
+  justify-content: center;
+}
+.h3-sec {
+  font-size: 34px;
+  font-family: "Bree Serif", serif;
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+.btn {
+  padding: 6px 20px;
+  background-color: rgba(144, 35, 194, 0.411);
+  color: rgba(255, 255, 255, 0.767);
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  /* left: 30px; */
+  position: relative;
+  left: 182px;
+}
+.btn :hover {
+  background-color: rgba(82, 78, 78, 0.664);
+  color: white;
+}
